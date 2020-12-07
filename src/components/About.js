@@ -4,7 +4,8 @@ import React, {useState, useEffect} from 'react';
 import {Helmet} from 'react-helmet';
 
 // TODO(slightlyoff): factor out common JSON parsing & caching of this file
-const DATA_URL = 'https://api.covid19india.org/website_data.json';
+const DATA_URL =
+  'https://gist.githubusercontent.com/Viraj-Bhartiya/d6b03a802ca21c360c6461db38e73129/raw/3da99bac815a3d66d81be5c656a6aa53d389cc23/data.json';
 
 function About() {
   const [faq, setFaq] = useState([]);
