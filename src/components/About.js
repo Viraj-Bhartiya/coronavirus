@@ -34,10 +34,7 @@ function About() {
     <React.Fragment>
       <Helmet>
         <title>About</title>
-        <meta
-          name="title"
-          content="Coronavirus"
-        />
+        <meta name="title" content="Coronavirus" />
       </Helmet>
 
       <div className="About">
