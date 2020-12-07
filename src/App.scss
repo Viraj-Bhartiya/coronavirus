@@ -69,6 +69,25 @@ $dark-m-blue: #3391ff;
 $dark-m-purple: #9673b9;
 $dark-m-purple-mid: #9673b9bb;
 $dark-m-purple-light: #40008050;
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+    // For Internet Explorer
+    & {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+
 * {
     font-family: 'archia';
 }
@@ -79,6 +98,7 @@ html {
 }
 
 body {
+    @include scrollbars(10px, $blue, $blue-light, );
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     margin: 0;
@@ -3742,36 +3762,6 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
-}
-
-@mixin scrollbars($size,
-$foreground-color,
-$background-color: mix($foreground-color,
-white,
-50%)) {
-    // For Google Chrome
-    &::-webkit-scrollbar {
-        width: $size;
-        height: $size;
-    }
-    &::-webkit-scrollbar-thumb {
-        background: $foreground-color;
-    }
-    &::-webkit-scrollbar-track {
-        background: $background-color;
-    }
-    // For Internet Explorer
-    & {
-        scrollbar-face-color: $foreground-color;
-        scrollbar-track-color: $background-color;
-    }
-}
-
-body {
-    @include scrollbars(10px,
-    $blue,
-    $blue-light,
-    );
 }
 
 .custom-area {
