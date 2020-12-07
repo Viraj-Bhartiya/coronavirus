@@ -1,5 +1,5 @@
 import React from 'react';
-import {Twitter, GitHub, Database, Mail, Send} from 'react-feather';
+import {Instagram, GitHub, Globe, Mail, Youtube} from 'react-feather';
 import {useTranslation} from 'react-i18next';
 
 function Footer() {
@@ -8,12 +8,13 @@ function Footer() {
   return (
     <footer>
       <div className="link">
+        <p>Made with ❤ by</p>
         <a
-          href="https://github.com/covid19india"
+          href="https://viraj-bhartiya.github.io"
           target="_blank"
           rel="noopener noreferrer"
         >
-          covid19india
+          Viraj Bhartiya
         </a>
       </div>
 
@@ -21,7 +22,7 @@ function Footer() {
 
       <div className="links">
         <a
-          href="https://github.com/covid19india/covid19india-react"
+          href="https://github.com/Viraj-Bhartiya"
           className="github"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,34 +31,34 @@ function Footer() {
         </a>
 
         <a
-          className="api"
-          href="https://api.covid19india.org"
+          className="website"
+          href="https://viraj-bhartiya.github.io"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Database />
+          <Globe />
         </a>
 
         <a
-          href="https://t.me/covid19indiaorg"
-          className="telegram"
+          href="https://www.youtube.com/channel/UCvwfCZDYeUKWdmHUAGhgsnQ?view_as=subscriber"
+          className="youtube"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Send />
+          <Youtube />
         </a>
 
         <a
-          href="https://twitter.com/covid19indiaorg"
+          href="https://www.instagram.com/_viraj.bhartiya_"
           target="_blank"
           rel="noopener noreferrer"
-          className="twitter"
+          className="instagram"
         >
-          <Twitter />
+          <Instagram />
         </a>
 
         <a
-          href="mailto:hello@covid19india.org"
+          href="mailto:vlbhartiya@gmail.com"
           className="mail"
           target="_blank"
           rel="noopener noreferrer"

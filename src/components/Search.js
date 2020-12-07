@@ -14,16 +14,16 @@ import {Link} from 'react-router-dom';
 import {useDebounce, useUpdateEffect} from 'react-use';
 
 const suggestions = [
-  'Madurai',
-  'Karnataka',
-  'Ladakh',
+  'Auranabad',
+  'Delhi',
+  'Banglore',
   'Mumbai',
-  'Andhra Pradesh',
-  'Alappuzha',
+  'Chandigarh',
+  'Pune',
 ];
 
 const districtSuggestions = [
-  'Madurai',
+  'Aurangabad',
   'Ganjam',
   'Alappuzha',
   'Mumbai',
@@ -31,8 +31,8 @@ const districtSuggestions = [
 ];
 
 const stateSuggestions = [
-  'Andhra Pradesh',
-  'Karnataka',
+  'Maharashtra',
+  'Madhya Pradesh',
   'Gujarat',
   'West Bengal',
   'Ladakh',
