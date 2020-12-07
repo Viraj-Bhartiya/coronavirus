@@ -113,13 +113,8 @@ function State() {
   return (
     <React.Fragment>
       <Helmet>
-        <title>
-          {STATE_NAMES[stateCode]}
-        </title>
-        <meta
-          name="title"
-          content={`${STATE_NAMES[stateCode]}`}
-        />
+        <title>{STATE_NAMES[stateCode]}</title>
+        <meta name="title" content={`${STATE_NAMES[stateCode]}`} />
       </Helmet>
 
       <div className="State">
