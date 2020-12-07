@@ -145,7 +145,10 @@ function Expand({pages, setExpand, darkMode, windowSize}) {
       {windowSize.width < 768 && <SunMoon {...{darkMode}} />}
 
       <div className="expand-bottom">
-        <h5>{t('A crowdsourced initiative.')}</h5>
+        <h5>
+          Made with ❤ by{' '}
+          <a href="http://viraj-bhartiya.github.io">Viraj Bhartiya</a>
+        </h5>
       </div>
     </div>
   );
