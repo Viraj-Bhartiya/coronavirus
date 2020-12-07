@@ -81,7 +81,8 @@ function Navbar({
                 <Icon.Home {...activeNavIcon('/')} />
               </span>
             </Link>
-            <Link to="/blog">
+            {/* <Link to="/blog"> */}
+              <Link>
               <span>
                 <Icon.Book {...activeNavIcon('/blog')} />
               </span>
