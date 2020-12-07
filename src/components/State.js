@@ -118,7 +118,7 @@ function State() {
         </title>
         <meta
           name="title"
-          content={`Coronavirus Outbreak in ${STATE_NAMES[stateCode]}: Latest Map and Case Count`}
+          content={`Coronavirus Outbreak in ${STATE_NAMES[stateCode]}`}
         />
       </Helmet>
 

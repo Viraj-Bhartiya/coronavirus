@@ -1089,19 +1089,6 @@ h6 {
                 }
             }
         }
-        // .bell-icon {
-        //     height: 24px;
-        //     position: relative;
-        //     .indicator {
-        //         background: $pblue;
-        //         border-radius: 50%;
-        //         height: 7px;
-        //         position: absolute;
-        //         right: -3px;
-        //         top: -3px;
-        //         width: 7px;
-        //     }
-        // }
     }
 }
 
@@ -3755,4 +3742,40 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+}
+
+@mixin scrollbars($size,
+$foreground-color,
+$background-color: mix($foreground-color,
+white,
+50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+    &::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+    // For Internet Explorer
+    & {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+
+body {
+    @include scrollbars(10px,
+    $blue,
+    $blue-light,
+    );
+}
+
+.custom-area {
+    @include scrollbars(.5em,
+    slategray,
+    );
 }
