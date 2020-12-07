@@ -5,7 +5,6 @@ import {useTransition, animated} from 'react-spring';
 
 const Tooltip = ({data, children}) => {
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
-
   const transitions = useTransition(isTooltipVisible, null, {
     from: TOOLTIP_FADE_OUT,
     enter: TOOLTIP_FADE_IN,
