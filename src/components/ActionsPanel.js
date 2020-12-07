@@ -14,7 +14,6 @@ const ActionsPanel = ({
   dates,
   setShowUpdates,
 }) => {
-
   const TimelineIcon = useMemo(
     () => (
       <svg
