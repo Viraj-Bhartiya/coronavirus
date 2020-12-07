@@ -1,44 +1,19 @@
 import {parse, format} from 'date-fns';
 import {utcToZonedTime} from 'date-fns-tz';
 import React, {useMemo, useCallback, lazy, Suspense} from 'react';
-import * as Icon from 'react-feather';
 import {useSpring, animated} from 'react-spring';
 
 const Timeline = lazy(() => import('./Timeline'));
 
 const ActionsPanel = ({
   lastViewedLog,
-  newUpdate,
   isTimelineMode,
   setIsTimelineMode,
   showUpdates,
   setDate,
   dates,
-  setNewUpdate,
   setShowUpdates,
 }) => {
-  const Bell = useMemo(
-    () => (
-      <Icon.Bell
-        onClick={() => {
-          setShowUpdates(!showUpdates);
-          setNewUpdate(false);
-        }}
-      />
-    ),
-    [setNewUpdate, setShowUpdates, showUpdates]
-  );
-
-  const BellOff = useMemo(
-    () => (
-      <Icon.BellOff
-        onClick={() => {
-          setShowUpdates(!showUpdates);
-        }}
-      />
-    ),
-    [setShowUpdates, showUpdates]
-  );
 
   const TimelineIcon = useMemo(
     () => (
@@ -106,11 +81,6 @@ const ActionsPanel = ({
         <h5 className="fadeInUp" style={trail[0]}>{`${getTimeFromMilliseconds(
           lastViewedLog
         )} IST`}</h5>
-
-        <div className="bell-icon fadeInUp" style={trail[1]}>
-          {!showUpdates ? Bell : BellOff}
-          {newUpdate && <div className="indicator"></div>}
-        </div>
 
         <div
           className="timeline-icon fadeInUp"
