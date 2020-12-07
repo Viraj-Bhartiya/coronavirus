@@ -215,6 +215,9 @@ h6 {
             a {
                 background: $blue-hover;
                 color: $blue;
+                &:hover {
+                    background: $blue-light;
+                }
             }
             &:hover {
                 background: none;
