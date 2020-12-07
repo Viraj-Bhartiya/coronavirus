@@ -3,7 +3,6 @@ import {capitalize} from '../utils/commonFunctions';
 
 import {formatDistance, format} from 'date-fns';
 import React, {useLayoutEffect} from 'react';
-import {Send} from 'react-feather';
 
 const newDate = new Date();
 let currentDate = newDate;
