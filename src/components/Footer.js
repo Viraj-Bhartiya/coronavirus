@@ -8,14 +8,16 @@ function Footer() {
   return (
     <footer>
       <div className="link">
-        <p>Made with ❤ by</p>
-        <a
-          href="https://viraj-bhartiya.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Viraj Bhartiya
-        </a>
+        <p>
+          Made with ❤ by{' '}
+          <a
+            href="https://viraj-bhartiya.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Viraj Bhartiya
+          </a>
+        </p>
       </div>
 
       <h5>{t('#StayHomeStaySafe')}</h5>
