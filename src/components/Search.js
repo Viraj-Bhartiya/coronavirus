@@ -256,7 +256,7 @@ function Search() {
   return (
     <div className="Search">
       <label className="fadeInUp" style={trail[0]}>
-        {t('Search your district or state')}
+        {t('Search your city or district or state')}
       </label>
       <div className="line fadeInUp" style={trail[1]}></div>
 
