@@ -212,6 +212,10 @@ h6 {
             h5 {
                 margin: 0;
             }
+            a {
+                background: $blue-hover;
+                color: $blue;
+            }
             &:hover {
                 background: none;
             }
@@ -2773,30 +2777,6 @@ footer {
         }
         svg {
             height: 1rem;
-        }
-    }
-}
-
-.updates-footer {
-    align-self: center;
-    color: $gray-dark;
-    margin-left: auto;
-    .telegram {
-        color: $blue;
-        &:hover {
-            color: $purple;
-        }
-    }
-    h4 {
-        color: $blue-mid;
-        font-weight: 900;
-        margin-top: .5rem;
-        &:hover {
-            color: $blue;
-        }
-        svg {
-            height: 1rem;
-            margin-bottom: -.25rem;
         }
     }
 }

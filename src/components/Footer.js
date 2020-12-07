@@ -18,7 +18,7 @@ function Footer() {
         </a>
       </div>
 
-      <h5>{t('We stand with everyone fighting on the frontlines')}</h5>
+      <h5>{t('#StayHomeStaySafe')}</h5>
 
       <div className="links">
         <a
