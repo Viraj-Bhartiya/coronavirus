@@ -20,7 +20,7 @@ function Footer() {
         </p>
       </div>
 
-      <h5>{t('#StayHomeStaySafe')}</h5>
+      <h5>{t('#StaySafe')}</h5>
 
       <div className="links">
         <a
