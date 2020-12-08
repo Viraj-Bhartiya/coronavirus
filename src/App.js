@@ -23,12 +23,7 @@ const App = () => {
       displayName: 'Home',
       showInNavbar: true,
     },
-    // {
-    //   pageLink: '/blog',
-    //   view: Blog,
-    //   displayName: 'Blog',
-    //   showInNavbar: true,
-    // },
+
     {
       pageLink: '/about',
       view: About,
