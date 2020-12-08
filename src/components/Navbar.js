@@ -82,11 +82,11 @@ function Navbar({
               </span>
             </Link>
             {/* <Link to="/blog"> */}
-            <Link>
+            {/* <Link>
               <span>
                 <Icon.Book {...activeNavIcon('/blog')} />
               </span>
-            </Link>
+            </Link> */}
             <Link to="/about">
               <span>
                 <Icon.HelpCircle {...activeNavIcon('/about')} />
