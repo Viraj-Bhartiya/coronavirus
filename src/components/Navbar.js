@@ -147,7 +147,7 @@ function Expand({pages, setExpand, darkMode, windowSize}) {
 
       <div className="expand-bottom">
         <h5>
-          Made with ❤ by{' '}
+          Made with ❤ by {' '}
           <a href="http://viraj-bhartiya.github.io">Viraj Bhartiya</a>
         </h5>
       </div>
