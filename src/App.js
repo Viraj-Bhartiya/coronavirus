@@ -1,5 +1,4 @@
 import './App.scss';
-import Blog from './components/Blog';
 import Navbar from './components/Navbar';
 
 import React, {lazy, useState, Suspense, useEffect} from 'react';
@@ -23,7 +22,6 @@ const App = () => {
       displayName: 'Home',
       showInNavbar: true,
     },
-
     {
       pageLink: '/about',
       view: About,
