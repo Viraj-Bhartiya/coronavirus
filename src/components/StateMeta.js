@@ -72,18 +72,6 @@ function StateMeta({stateCode, data, timeseries}) {
           <h3>Population</h3>
           <h1>{formatNumber(data[stateCode]?.meta?.population)}</h1>
         </div>
-        <div className="alert">
-          <Compass />
-          <div className="alert-right">
-            Based on 2019 population projection by NCP{' '}
-            <a
-              href="https://nhm.gov.in/New_Updates_2018/Report_Population_Projection_2019.pdf"
-              target="_noblank"
-            >
-              report
-            </a>
-          </div>
-        </div>
       </div>
 
       <div className="StateMeta">
