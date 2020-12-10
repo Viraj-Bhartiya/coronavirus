@@ -35,7 +35,7 @@ function TimeseriesExplorer({
   );
   const [chartType, setChartType] = useLocalStorage('chartType', 'total');
   const [isUniform, setIsUniform] = useLocalStorage('isUniform', true);
-  const [isLog, setIsLog] = useLocalStorage('isLog', false);
+  const isLog = useLocalStorage('isLog', false);
   const explorerElement = useRef();
   const isVisible = useIsVisible(explorerElement, {once: true});
 
@@ -186,21 +186,19 @@ function TimeseriesExplorer({
 
         <h1>{t('Spread Trends')}</h1>
         <div className="tabs">
-          {Object.entries(TIMESERIES_CHART_TYPES).map(
-            ([ctype, value], index) => (
-              <div
-                className={`tab ${chartType === ctype ? 'focused' : ''}`}
-                key={ctype}
-                onClick={setChartType.bind(this, ctype)}
-              >
-                <h4>{t(value)}</h4>
-              </div>
-            )
-          )}
+          {Object.entries(TIMESERIES_CHART_TYPES).map(([ctype, value]) => (
+            <div
+              className={`tab ${chartType === ctype ? 'focused' : ''}`}
+              key={ctype}
+              onClick={setChartType.bind(this, ctype)}
+            >
+              <h4>{t(value)}</h4>
+            </div>
+          ))}
         </div>
 
         <div className="scale-modes">
-          <label className="main">{t('Scale Modes')}</label>
+          <label className="main">{t('Scale Mode')}</label>
           <div className="timeseries-mode">
             <label htmlFor="timeseries-mode">{t('Uniform')}</label>
             <input
@@ -217,7 +215,7 @@ function TimeseriesExplorer({
               chartType !== 'total' ? 'disabled' : ''
             }`}
           >
-            <label htmlFor="timeseries-logmode">{t('Logarithmic')}</label>
+            {/* <label htmlFor="timeseries-logmode">{t('Logarithmic')}</label>
             <input
               id="timeseries-logmode"
               type="checkbox"
@@ -225,7 +223,7 @@ function TimeseriesExplorer({
               className="switch"
               disabled={chartType !== 'total'}
               onChange={setIsLog.bind(this, !isLog)}
-            />
+            /> */}
           </div>
         </div>
       </div>

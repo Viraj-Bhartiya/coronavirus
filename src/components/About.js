@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react';
 import {Helmet} from 'react-helmet';
 
 const DATA_URL =
-  'https://gist.githubusercontent.com/Viraj-Bhartiya/d6b03a802ca21c360c6461db38e73129/raw/3da99bac815a3d66d81be5c656a6aa53d389cc23/data.json';
+  'https://gist.githubusercontent.com/Viraj-Bhartiya/d6b03a802ca21c360c6461db38e73129/raw/fac81203f6a41b5323da6dd36961036f9954ec7b/data.json';
 
 function About() {
   const [faq, setFaq] = useState([]);
