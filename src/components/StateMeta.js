@@ -12,7 +12,6 @@ import {
 
 import {differenceInDays} from 'date-fns';
 import React from 'react';
-import {Compass} from 'react-feather';
 
 function StateMeta({stateCode, data, timeseries}) {
   const pastDates = Object.keys(timeseries || {}).filter(
